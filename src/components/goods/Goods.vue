@@ -88,8 +88,8 @@ export default {
 		initScroll () {
 			this.munuScroll = new BScroll(this.$refs.menuWrap,{
 				click: true,
-        startX: 0,
-        startY: 0
+		        startX: 0,
+		        startY: 0
 			})
 			this.goodsScroll = new BScroll(this.$refs.goodsWrap,{
 				click: true,
@@ -98,8 +98,8 @@ export default {
 				probeType: 3
 			})
 			this.goodsScroll.on('scroll', (pos) => {
-        this.scrollY = Math.abs(Math.round(pos.y))
-      })
+        		this.scrollY = Math.abs(Math.round(pos.y))
+      		})
 		},
 		calculateHeight () {
       let foodList = this.$refs.goodsWrap.getElementsByClassName('food-list-hook')
